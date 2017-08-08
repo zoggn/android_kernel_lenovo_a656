@@ -295,7 +295,7 @@ MTK_AIV_SUPPORT=no
 # Originally designed for ESD(Electrostatic discharge) test. For internal use only.
 MTK_ANDROIDFACTORYMODE_APP=yes
 MTK_API_CHECK=yes
-MTK_APKINSTALLER_APP=yes
+MTK_APKINSTALLER_APP=no
 
 # disable/enable application guide.
 MTK_APP_GUIDE=yes
@@ -719,7 +719,7 @@ MTK_FILEMANAGER_APP=yes
 MTK_FIRST_MD=1
 
 # MTK_FLIGHT_MODE_POWER_OFF_MD is used to control if modem is powered off when entering flight mode MTK_TELEPHONY_MODE is used for specify current telephony mode MTK_FIRST_MD is used to specify the high priority modem
-MTK_FLIGHT_MODE_POWER_OFF_MD=yes
+MTK_FLIGHT_MODE_POWER_OFF_MD=no
 
 # use  to wrap the FLV playback feature, AS 50MP do not include the FLV Playback, so set no
 MTK_FLV_PLAYBACK_SUPPORT=yes
@@ -1038,7 +1038,7 @@ MTK_PHONE_NUMBER_GEODESCRIPTION=yes
 MTK_PHONE_VOICE_RECORDING=yes
 
 # Enable voice answer function
-MTK_PHONE_VT_VOICE_ANSWER=no
+MTK_PHONE_VT_VOICE_ANSWER=yes
 MTK_PLANT3D_APP=no
 
 # Define hardware platfrom
@@ -1083,7 +1083,7 @@ MTK_RCSE_SUPPORT=no
 MTK_REGIONALPHONE_SUPPORT=no
 
 # Define release package for differernt codebase of different customer.(Different customer may get different number of source files)
-MTK_RELEASE_PACKAGE=rel_customer_basic rel_customer_platform_mt6589
+MTK_RELEASE_PACKAGE=rel_customer_basic_mt6589 rel_customer_operator_cmcc
 
 # MTK_RILD_READ_IMSI is used to config if we will try to read IMSI from SIM during rild initialization. And need to mapping the option to a system property.
 MTK_RILD_READ_IMSI=no
@@ -1095,7 +1095,7 @@ MTK_RSDM_APP=no
 MTK_RTP_OVER_RTSP_SUPPORT=yes
 
 # enable/disable rtsp bitrate adaptation feature Add this compile option for RTSP Streaming to do judgement: if enable, support bitrate adaptation
-MTK_RTSP_BITRATE_ADAPTATION_SUPPORT=no
+MTK_RTSP_BITRATE_ADAPTATION_SUPPORT=yes
 
 # Support stereo 3D display or not
 MTK_S3D_SUPPORT=no
@@ -1207,7 +1207,7 @@ MTK_SPI_NAND_SUPPORT=no
 MTK_SPM_MCDI_ENABLE=yes
 
 # This feature option is for Video Player streaming video, which is MTK cooperating with thirdpart like Letv to add 16 movies in Video Player. If Yes, means the VideoPlayer.apk is Video Player streaming video. If No, means the VideoPlayer.apk is default Video Player.
-MTK_STREAMING_VIDEO_SUPPORT=yes
+MTK_STREAMING_VIDEO_SUPPORT=no
 
 # Gallery video display can support internal / external subtitle
 MTK_SUBTITLE_SUPPORT=no
@@ -1276,7 +1276,7 @@ MTK_TVOUT_SUPPORT=no
 
 # Support share USB DP/DM as UART TX/RX.
 MTK_UART_USB_SWITCH=no
-MTK_UMTS_TDD128_MODE=no
+MTK_UMTS_TDD128_MODE=yes
 
 # USB Audio Function Enable Flag
 MTK_USB_AUDIO_SUPPORT=yes
