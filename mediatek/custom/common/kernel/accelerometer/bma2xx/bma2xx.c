@@ -542,6 +542,9 @@ static int bma_read_raw_data(struct i2c_client *client, s16 data[BMA_AXES_NUM])
 	return err;
 }
 
+
+#ifndef SW_CALIBRATION
+
 /* get hardware offset value from chip register */
 static int bma_get_hw_offset(struct i2c_client *client,
 		s8 offset[BMA_AXES_NUM + 1])
@@ -567,6 +570,8 @@ static int bma_set_hw_offset(struct i2c_client *client,
 
 	return err;
 }
+
+#endif
 
 static int bma_reset_calibration(struct i2c_client *client)
 {

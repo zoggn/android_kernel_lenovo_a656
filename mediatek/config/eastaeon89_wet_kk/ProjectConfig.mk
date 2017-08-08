@@ -49,25 +49,25 @@ CUSTOM_HAL_EEPROM=dummy_eeprom
 # User space cameara flashlight driver.You can use this driver to choose cameara flashlight type.
 CUSTOM_HAL_FLASHLIGHT=constant_flashlight
 
-CUSTOM_HAL_IMGSENSOR=gc2035mipi_yuv  ov8825_mipi_raw hi253_yuv hi704_yuv ov5648_mipi_raw gc0328_yuv
-CUSTOM_HAL_LENS = ov8825af fm50af dummy_lens
+CUSTOM_HAL_IMGSENSOR=
+CUSTOM_HAL_LENS = dummy_lens
 
 CUSTOM_HAL_MAIN2_IMGSENSOR=
-CUSTOM_HAL_MAIN_BACKUP_IMGSENSOR =ov5648_mipi_raw  
+CUSTOM_HAL_MAIN_BACKUP_IMGSENSOR =  
 
 # lens driver config for main camera (2nd solution)
-CUSTOM_HAL_MAIN_BACKUP_LENS =fm50af
+CUSTOM_HAL_MAIN_BACKUP_LENS =dummy_lens
 
 # User space image sensor  driver: Main camera (rear camera) used sensor related tuning, setting and calibration information.Value is used main sensor name.
-CUSTOM_HAL_MAIN_IMGSENSOR=ov8825_mipi_raw
+CUSTOM_HAL_MAIN_IMGSENSOR=
 
 # lens driver config for main camera
-CUSTOM_HAL_MAIN_LENS=ov8825af
+CUSTOM_HAL_MAIN_LENS=
 
 #CUSTOM_HAL_04_IMGSENSOR = ov5648_mipi_raw
 #CUSTOM_HAL_04_LENS = fm50af
 
-CUSTOM_HAL_05_IMGSENSOR = gc2035mipi_yuv
+CUSTOM_HAL_05_IMGSENSOR = 
 CUSTOM_HAL_05_LENS = dummy_lens
 
 # M-sensor hal layer library including daemon
@@ -83,17 +83,17 @@ CUSTOM_HAL_SUB_BACKUP_IMGSENSOR = hi704_yuv
 CUSTOM_HAL_SUB_BACKUP_LENS=dummy_lens
 
 # User space driver: Sub camera (front camera )used sensor related tuning, setting and calibration information. Value is used sub sensor name.
-CUSTOM_HAL_SUB_IMGSENSOR =gc0328_yuv
+CUSTOM_HAL_SUB_IMGSENSOR =
 
 
 # lens driver config for video telephony camera
 CUSTOM_HAL_SUB_LENS=dummy_lens
 
 # accelerometer sensor to detect accelerometer from x y z axis.
-CUSTOM_KERNEL_ACCELEROMETER=mma8452q_auto lis33dh_auto kxtf9_auto kxcjk_auto
+CUSTOM_KERNEL_ACCELEROMETER=bma2xx
 
 # ALSPS sensor driverto detect ambint light and the object is close or far awary from device
-CUSTOM_KERNEL_ALSPS=stk3310_auto tmd2771_auto
+CUSTOM_KERNEL_ALSPS=
 
 # Pressure sensor driver to detect pressure
 CUSTOM_KERNEL_BAROMETER=
@@ -123,7 +123,7 @@ CUSTOM_KERNEL_HEADSET=accdet
 CUSTOM_KERNEL_GYROSCOPE=l3g4200d
 
 # Kernel space image sensor driver. Define  project used all image sensors .The value is combination of CUSTOM_KERNEL_MAIN_IMGSENSOR, CUSTOM_KERNEL_MAIN_BACKUP_IMGSENSOR, CUSTOM_KERNEL_SUB_IMGSENSOR, and CUSTOM_KERNEL_SUB_BACKUP_IMGSENSOR
-CUSTOM_KERNEL_IMGSENSOR =gc2035mipi_yuv  ov8825_mipi_raw hi253_yuv hi704_yuv ov5648_mipi_raw gc0328_yuv
+CUSTOM_KERNEL_IMGSENSOR =
 # key pad driver to report key event
 CUSTOM_KERNEL_KPD=kpd
 
@@ -131,32 +131,32 @@ CUSTOM_KERNEL_KPD=kpd
 CUSTOM_KERNEL_LEDS=mt65xx
 
 # same as CUSTOM_HAL_LENS
-CUSTOM_KERNEL_LENS = ov8825af fm50af dummy_lens
+CUSTOM_KERNEL_LENS = dummy_lens
 
 
 # compass driver to detect compass raw data and report orientatino data
-CUSTOM_KERNEL_MAGNETOMETER=akm8975_auto mmc328xma_auto
+CUSTOM_KERNEL_MAGNETOMETER=
 CUSTOM_KERNEL_MAIN2_BACKUP_IMGSENSOR=
 CUSTOM_KERNEL_MAIN2_IMGSENSOR=
 
 # Kernel space image sensor  driver:Main camera (rear camera) used backup sensor driver.Value is used main backup sensor name.
-CUSTOM_KERNEL_MAIN_BACKUP_IMGSENSOR =ov5648_mipi_raw 
+CUSTOM_KERNEL_MAIN_BACKUP_IMGSENSOR =
 #ov12830_mipi_raw
 
 # lens driver config for main camera (2nd solution)
-CUSTOM_KERNEL_MAIN_BACKUP_LENS =fm50af 
+CUSTOM_KERNEL_MAIN_BACKUP_LENS = 
 #ov12830af
 
 # Kernel space image sensor driver:Main camera (rear camera) used sensor driver.Value is used main sensor name.
-CUSTOM_KERNEL_MAIN_IMGSENSOR=ov8825_mipi_raw
+CUSTOM_KERNEL_MAIN_IMGSENSOR=
 
 # lens driver config for main camera
-CUSTOM_KERNEL_MAIN_LENS=ov8825af
+CUSTOM_KERNEL_MAIN_LENS=
 
 #CUSTOM_KERNEL_04_IMGSENSOR = ov5648_mipi_raw
 #CUSTOM_KERNEL_04_LENS = fm50af
 
-CUSTOM_KERNEL_05_IMGSENSOR = gc2035mipi_yuv
+CUSTOM_KERNEL_05_IMGSENSOR =
 CUSTOM_KERNEL_05_LENS = dummy_lens
 
 # RTC driver customization
@@ -167,19 +167,19 @@ CUSTOM_KERNEL_SOUND=amp_aw8145
 CUSTOM_KERNEL_SSW=ssw_generic
 
 # Kernel space image sensor driver:Sub camera (front camera) used backup sensor driver.Value is used sub backup sensor name.
-CUSTOM_KERNEL_SUB_BACKUP_IMGSENSOR = hi704_yuv
+CUSTOM_KERNEL_SUB_BACKUP_IMGSENSOR =
 
 # lens driver config for video telephony camera (2nd solution)
 CUSTOM_KERNEL_SUB_BACKUP_LENS=dummy_lens
 
 # Kernel space image sensor driver:Sub camera (front camera) used sensor driver.Value is used sub sensor name.
-CUSTOM_KERNEL_SUB_IMGSENSOR =gc0328_yuv
+CUSTOM_KERNEL_SUB_IMGSENSOR =
 
 # lens driver config for video telephony camera
 CUSTOM_KERNEL_SUB_LENS=dummy_lens
 
 # touch driver  need to report correct touch axes
-CUSTOM_KERNEL_TOUCHPANEL=ft5316_i90 GT9XX_I90
+CUSTOM_KERNEL_TOUCHPANEL=GT9XX
 
 # Configuration for USB PHY
 CUSTOM_KERNEL_USB=mt6577
@@ -1238,7 +1238,7 @@ MTK_TELEPHONY_BOOTUP_MODE_SLOT1=0
 MTK_TELEPHONY_BOOTUP_MODE_SLOT2=1
 
 # MTK_FLIGHT_MODE_POWER_OFF_MD is used to control if modem is powered off when entering flight mode MTK_TELEPHONY_MODE is used for specify current telephony mode MTK_FIRST_MD is used to specify the high priority modem
-MTK_TELEPHONY_MODE=1
+MTK_TELEPHONY_MODE=2
 
 # "yes" means enable Tencent mobile manager(normal version) feature and "no" disable.
 MTK_TENCENT_MOBILE_MANAGER_NORMAL_SUPPORT=yes
@@ -1389,7 +1389,7 @@ NXP_SMARTPA_SUPPORT=no
 OP01_CTS_COMPATIBLE=no
 
 # It's used to define which operator you will support. If it's not operator load, the value is NONE(default value). The values may be: OP01_SPEC0200_SEGC(for CMCC), OPO2_SPEC0200_SEGA(for CU)
-OPTR_SPEC_SEG_DEF=NONE
+OPTR_SPEC_SEG_DEF=OP01_SPEC0200_SEGC
 PLATFORM_MTK_SDK_VERSION=2
 
 # AP only chip use external modem, ex: mt8135.
@@ -1478,10 +1478,10 @@ CUSTOM_KERNEL_LCM=otm8018b_dsi_vdo_tianma otm8009_dsi_6589
 CUSTOM_UBOOT_LCM=otm9605a_qhd_dsi_vdo_u701b_ykl
 
 # To set LCM resolution height size
-LCM_HEIGHT=960
+LCM_HEIGHT=854
 
 # To set LCM resolution width size
-LCM_WIDTH=540
+LCM_WIDTH=480
 
 # To control resource build. The value would be assigned to PRODUCT_LOCALES under build/target/product/XXX.mk (XXX is each project's name)
 MTK_PRODUCT_LOCALES=en_US es_ES zh_CN zh_TW ru_RU pt_BR fr_FR de_DE tr_TR it_IT in_ID ms_MY vi_VN ar_EG th_TH pt_PT nl_NL el_GR hu_HU tl_PH ro_RO cs_CZ ko_KR iw_IL my_MM km_KH xxhdpi xhdpi hdpi
