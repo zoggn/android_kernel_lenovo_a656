@@ -49,20 +49,20 @@ CUSTOM_HAL_EEPROM=dummy_eeprom
 # User space cameara flashlight driver.You can use this driver to choose cameara flashlight type.
 CUSTOM_HAL_FLASHLIGHT=constant_flashlight
 
-CUSTOM_HAL_IMGSENSOR=
-CUSTOM_HAL_LENS = dummy_lens
+CUSTOM_HAL_IMGSENSOR=ov5648_mipi_raw
+CUSTOM_HAL_LENS = fm50af sensordrive dummy_lens
 
 CUSTOM_HAL_MAIN2_IMGSENSOR=
 CUSTOM_HAL_MAIN_BACKUP_IMGSENSOR =  
 
 # lens driver config for main camera (2nd solution)
-CUSTOM_HAL_MAIN_BACKUP_LENS =dummy_lens
+CUSTOM_HAL_MAIN_BACKUP_LENS =sensordrive
 
 # User space image sensor  driver: Main camera (rear camera) used sensor related tuning, setting and calibration information.Value is used main sensor name.
-CUSTOM_HAL_MAIN_IMGSENSOR=
+CUSTOM_HAL_MAIN_IMGSENSOR=ov5648_mipi_raw
 
 # lens driver config for main camera
-CUSTOM_HAL_MAIN_LENS=
+CUSTOM_HAL_MAIN_LENS=fm50af
 
 #CUSTOM_HAL_04_IMGSENSOR = ov5648_mipi_raw
 #CUSTOM_HAL_04_LENS = fm50af
@@ -77,14 +77,13 @@ CUSTOM_HAL_MSENSORLIB=mmc328x akm8975 ami304 yamaha530 mag3110 akmd8963 bmm050 m
 CUSTOM_HAL_SENSORS=sensor
 
 # User space image sensor driver: Sub camera (front camera )used backup sensor related tuning, setting and calibration information. Value is used sub backup sensor name.
-CUSTOM_HAL_SUB_BACKUP_IMGSENSOR = hi704_yuv
+CUSTOM_HAL_SUB_BACKUP_IMGSENSOR =
 
 # lens driver config for video telephony camera (2nd solution)
 CUSTOM_HAL_SUB_BACKUP_LENS=dummy_lens
 
 # User space driver: Sub camera (front camera )used sensor related tuning, setting and calibration information. Value is used sub sensor name.
 CUSTOM_HAL_SUB_IMGSENSOR =
-
 
 # lens driver config for video telephony camera
 CUSTOM_HAL_SUB_LENS=dummy_lens
@@ -120,10 +119,10 @@ CUSTOM_KERNEL_FLASHLIGHT=constant_flashlight
 # detect headset cable plug in and out
 CUSTOM_KERNEL_HEADSET=accdet
 
-CUSTOM_KERNEL_GYROSCOPE=l3g4200d
+CUSTOM_KERNEL_GYROSCOPE=
 
 # Kernel space image sensor driver. Define  project used all image sensors .The value is combination of CUSTOM_KERNEL_MAIN_IMGSENSOR, CUSTOM_KERNEL_MAIN_BACKUP_IMGSENSOR, CUSTOM_KERNEL_SUB_IMGSENSOR, and CUSTOM_KERNEL_SUB_BACKUP_IMGSENSOR
-CUSTOM_KERNEL_IMGSENSOR =
+CUSTOM_KERNEL_IMGSENSOR = ov5648_mipi_raw
 # key pad driver to report key event
 CUSTOM_KERNEL_KPD=kpd
 
@@ -131,7 +130,7 @@ CUSTOM_KERNEL_KPD=kpd
 CUSTOM_KERNEL_LEDS=mt65xx
 
 # same as CUSTOM_HAL_LENS
-CUSTOM_KERNEL_LENS = dummy_lens
+CUSTOM_KERNEL_LENS = fm50af sensordrive dummy_lens
 
 
 # compass driver to detect compass raw data and report orientatino data
@@ -144,14 +143,14 @@ CUSTOM_KERNEL_MAIN_BACKUP_IMGSENSOR =
 #ov12830_mipi_raw
 
 # lens driver config for main camera (2nd solution)
-CUSTOM_KERNEL_MAIN_BACKUP_LENS = 
+CUSTOM_KERNEL_MAIN_BACKUP_LENS = sensordrive
 #ov12830af
 
 # Kernel space image sensor driver:Main camera (rear camera) used sensor driver.Value is used main sensor name.
-CUSTOM_KERNEL_MAIN_IMGSENSOR=
+CUSTOM_KERNEL_MAIN_IMGSENSOR=ov5648_mipi_raw
 
 # lens driver config for main camera
-CUSTOM_KERNEL_MAIN_LENS=
+CUSTOM_KERNEL_MAIN_LENS=fm50af
 
 #CUSTOM_KERNEL_04_IMGSENSOR = ov5648_mipi_raw
 #CUSTOM_KERNEL_04_LENS = fm50af
