@@ -92,6 +92,7 @@ extern LCM_DRIVER hx8369_dsi_tm_lcm_drv;
 extern LCM_DRIVER otm1280a_hd720_dsi_cmd_drv;	 
 extern LCM_DRIVER otm8018b_dsi_vdo_lcm_drv;	 
 extern LCM_DRIVER otm8018b_dsi_vdo_txd_fwvga_lcm_drv;
+extern LCM_DRIVER otm8018b_dsi_vdo_tianma_lcm_drv;
 extern LCM_DRIVER nt35512_dsi_vdo_lcm_drv;
 extern LCM_DRIVER nt35512_wvga_dsi_vdo_boe_drv;
 extern LCM_DRIVER hx8369_rgb_6585_fpga_lcm_drv;
@@ -130,6 +131,7 @@ extern LCM_DRIVER otm9608_wvga_dsi_cmd_drv;
 extern LCM_DRIVER nt35510_dbi_18bit_gionee_lcm_drv;
 extern LCM_DRIVER otm8009a_fwvga_dsi_cmd_tianma_lcm_drv;
 extern LCM_DRIVER otm8009a_fwvga_dsi_vdo_tianma_lcm_drv;
+extern LCM_DRIVER otm8009_dsi_6589_lcm_drv;
 extern LCM_DRIVER hx8389b_qhd_dsi_vdo_tianma_lcm_drv;
 extern LCM_DRIVER cm_otc3108bhv161_dsi_vdo_lcm_drv;
 extern LCM_DRIVER auo_b079xat02_dsi_vdo_lcm_drv;
@@ -520,6 +522,10 @@ LCM_DRIVER* lcm_driver_list[] =
 #if defined(OTM8018B_DSI_VDO)	
 	&otm8018b_dsi_vdo_lcm_drv, 
 #endif
+    
+#if defined(OTM8018B_DSI_VDO_TIANMA)
+	&otm8018b_dsi_vdo_tianma_lcm_drv,
+#endif    
 
 #if defined(NT35512_DSI_VDO)
 	&nt35512_dsi_vdo_lcm_drv, 
@@ -636,6 +642,10 @@ LCM_DRIVER* lcm_driver_list[] =
 #if defined(OTM8009A_FWVGA_DSI_CMD_TIANMA)
 	&otm8009a_fwvga_dsi_cmd_tianma_lcm_drv,
 #endif
+
+#if defined(OTM8009_DSI_6589)
+	&otm8009_dsi_6589_lcm_drv,
+#endif    
 
 #if defined(OTM8009A_FWVGA_DSI_VDO_TIANMA)
 	&otm8009a_fwvga_dsi_vdo_tianma_lcm_drv,

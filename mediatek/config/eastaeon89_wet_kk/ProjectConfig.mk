@@ -1472,7 +1472,7 @@ MTK_HDMI_SUPPORT=no
 BOOT_LOGO=qhd
 
 # To choose kernel LCM driver name
-CUSTOM_KERNEL_LCM=otm9605a_qhd_dsi_vdo_u701b_ykl
+CUSTOM_KERNEL_LCM=otm8018b_dsi_vdo_tianma otm8009_dsi_6589
 
 # To choose uboot LCM driver name
 CUSTOM_UBOOT_LCM=otm9605a_qhd_dsi_vdo_u701b_ykl
