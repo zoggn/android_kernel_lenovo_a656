@@ -163,7 +163,7 @@ CUSTOM_KERNEL_05_LENS = dummy_lens
 CUSTOM_KERNEL_RTC=rtc
 
 # For audio kernel driver's speaker customization folder definition.
-CUSTOM_KERNEL_SOUND=amp_aw8145
+CUSTOM_KERNEL_SOUND=amp_yad
 CUSTOM_KERNEL_SSW=ssw_generic
 
 # Kernel space image sensor driver:Sub camera (front camera) used backup sensor driver.Value is used sub backup sensor name.
@@ -188,7 +188,7 @@ CUSTOM_KERNEL_USB=mt6577
 CUSTOM_KERNEL_VIBRATOR=vibrator
 
 # To choose LK LCM driver name
-CUSTOM_LK_LCM=otm9605a_qhd_dsi_vdo_u701b_ykl
+CUSTOM_LK_LCM=otm8018b_dsi_vdo_tianma otm8009_dsi_6589
 
 # Support customer to implement and apply their own RSA security functions
 CUSTOM_SEC_AUTH_SUPPORT=no
@@ -342,8 +342,8 @@ MTK_AUTOIP_SUPPORT=no
 MTK_AUTORAMA_SUPPORT=yes
 
 # one load to support different accelerometer sensor
-MTK_AUTO_DETECT_ACCELEROMETER=yes
-MTK_AUTO_DETECT_ALSPS=yes
+MTK_AUTO_DETECT_ACCELEROMETER=no
+MTK_AUTO_DETECT_ALSPS=no
 
 # one load to support different magnetometer sensor
 MTK_AUTO_DETECT_MAGNETOMETER=yes
@@ -705,7 +705,7 @@ MTK_FACTORY_MODE_IN_GB2312=yes
 MTK_FAN5402_SUPPORT=no
 
 # use external charger IC, MTK support
-MTK_FAN5405_SUPPORT=no
+MTK_FAN5405_SUPPORT=yes
 MTK_FASTBOOT_SUPPORT=no
 
 # For NAND phone such as in EMMC phone with internal sd card, FAT on NAND feature was cut from NAND to be a independent fat partition,and create FAT image file over /fat yaffs2 file system, then let NAND phone can support FAT file system in internal.
@@ -1475,7 +1475,7 @@ BOOT_LOGO=qhd
 CUSTOM_KERNEL_LCM=otm8018b_dsi_vdo_tianma otm8009_dsi_6589
 
 # To choose uboot LCM driver name
-CUSTOM_UBOOT_LCM=otm9605a_qhd_dsi_vdo_u701b_ykl
+CUSTOM_UBOOT_LCM=otm8018b_dsi_vdo_tianma otm8009_dsi_6589
 
 # To set LCM resolution height size
 LCM_HEIGHT=854
