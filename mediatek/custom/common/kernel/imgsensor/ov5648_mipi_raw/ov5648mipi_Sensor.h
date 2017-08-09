@@ -127,7 +127,7 @@ typedef struct _sensor_data_struct
 
 
 /* Data Format */
-#define OV5648MIPI_COLOR_FORMAT                     SENSOR_OUTPUT_FORMAT_RAW_B
+#define OV5648MIPI_COLOR_FORMAT                     SENSOR_OUTPUT_FORMAT_RAW_Gr
 
 
 #define OV5648MIPI_MIN_ANALOG_GAIN                  1   /* 1x */
