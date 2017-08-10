@@ -991,7 +991,7 @@ ifeq (OP01_SPEC0200_SEGC, $(strip $(OPTR_SPEC_SEG_DEF)))
       $(call dep-err-common, Please turn off MTK_APKINSTALLER_APP or set OPTR_SPEC_SEG_DEF as not OP01_SPEC0200_SEGC)
    endif
    ifeq ($(MTK_DATA_TRANSFER_APP),yes)
-      $(call dep-err-common, Please turn off   or set OPTR_SPEC_SEG_DEF as not OP01_SPEC0200_SEGC)
+      $(call dep-err-common, Please turn off MTK_DATA_TRANSFER_APP or set OPTR_SPEC_SEG_DEF as not OP01_SPEC0200_SEGC)
    endif
    ifneq ($(MTK_RTSP_BITRATE_ADAPTATION_SUPPORT),yes)
       $(call dep-err-common, Please turn on MTK_RTSP_BITRATE_ADAPTATION_SUPPORT  or set OPTR_SPEC_SEG_DEF as not OP01_SPEC0200_SEGC)
