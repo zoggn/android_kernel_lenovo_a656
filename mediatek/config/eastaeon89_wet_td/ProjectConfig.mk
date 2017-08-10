@@ -1063,7 +1063,7 @@ MTK_RCSE_SUPPORT=no
 MTK_REGIONALPHONE_SUPPORT=no
 
 # Define release package for differernt codebase of different customer.(Different customer may get different number of source files)
-MTK_RELEASE_PACKAGE=rel_customer_basic rel_customer_platform_mt6589
+MTK_RELEASE_PACKAGE=rel_customer_basic rel_customer_operator_cmcc
 
 # MTK_RILD_READ_IMSI is used to config if we will try to read IMSI from SIM during rild initialization. And need to mapping the option to a system property.
 MTK_RILD_READ_IMSI=no

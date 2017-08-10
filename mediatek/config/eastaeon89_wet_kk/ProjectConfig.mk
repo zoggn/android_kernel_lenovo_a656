@@ -92,7 +92,7 @@ CUSTOM_HAL_SUB_LENS=dummy_lens
 CUSTOM_KERNEL_ACCELEROMETER=bma2xx
 
 # ALSPS sensor driverto detect ambint light and the object is close or far awary from device
-CUSTOM_KERNEL_ALSPS=
+CUSTOM_KERNEL_ALSPS=rpr410
 
 # Pressure sensor driver to detect pressure
 CUSTOM_KERNEL_BAROMETER=
