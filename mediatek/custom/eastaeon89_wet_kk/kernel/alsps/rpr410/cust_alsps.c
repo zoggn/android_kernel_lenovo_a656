@@ -5,7 +5,7 @@
 
 static struct alsps_hw cust_alsps_hw = {
     .i2c_num    = 3,
-	.polling_mode_ps =0,
+	.polling_mode_ps =1,
 	.polling_mode_als =1,
     .power_id   = MT65XX_POWER_NONE,    /*LDO is not used*/
     .power_vol  = VOL_DEFAULT,          /*LDO is not used*/
